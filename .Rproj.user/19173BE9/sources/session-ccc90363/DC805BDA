@@ -1,0 +1,26 @@
+{
+    "id": "DC805BDA",
+    "path": "~/Desktop/Toronto-Island-Ferry-Ticket/scripts/00-simulate_data.R",
+    "project_path": "scripts/00-simulate_data.R",
+    "type": "r_source",
+    "hash": "4170704735",
+    "contents": "",
+    "dirty": false,
+    "created": 1727235697753.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "6,27",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1727236567,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1727236567896,
+    "read_only": false,
+    "read_only_alternatives": []
+}
