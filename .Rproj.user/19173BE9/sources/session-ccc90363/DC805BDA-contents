@@ -34,7 +34,8 @@ simulated_data <- tibble(
 )
 
 # show simulated data
-simulated_data
+head(simulated_data)
+write_csv(simulated_data, "data/sim_data/sim-ferry-ticket-counts.csv")
 
 
 
