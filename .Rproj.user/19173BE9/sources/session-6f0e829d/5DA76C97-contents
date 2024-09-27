@@ -54,6 +54,13 @@ ggplot(cleaned_data, aes(x = Timestamp, y = `Redemption Count`)) +
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
   )
+
+
+```
+
+
+This graph shows the change in the number of redemptions over time@fig-redemption. Redemption behavior is relatively stable throughout the time period, but there are some significant peaks, especially on certain days, when the number of redemptions rises sharply. This may reflect promotions associated with the sale or certain redemption events
+```{r}
 #| label: fig-distribution1
 #| fig-cap: Distribution of Redemption Counts
 #| echo: false
@@ -70,6 +77,11 @@ ggplot(cleaned_data, aes(x = `Redemption Count`)) +
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
   )
+
+
+```
+This is the distribution of the number of redemptions@fig-distribution1. The vast majority of redemption activities are concentrated in the low redemption frequency area, and a few events with a large number of redemptions pull up the tail of the distribution. The distribution of the number of redemptions also shows a skewed distribution, similar to the distribution of the number of sales.
+```{r}
 #| label: fig-sales
 #| fig-cap: Total Sales Count Over Time
 #| echo: false
@@ -87,6 +99,10 @@ ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +
     axis.title = element_text(face = "bold"),
     axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels for better readability
   )
+```
+This line chart shows how the number of sales changes over time@fig-sales. It can be seen that the number of sales is relatively stable throughout the period, with occasional sales peaks, especially at a few specific time points. This may reflect a short-term sales surge caused by some promotional activities or special events.
+
+```{r}
 #| label: fig-distribution2
 #| fig-cap: Distribution of Sales Counts
 #| echo: false
@@ -104,16 +120,9 @@ ggplot(cleaned_data, aes(x = `Sales Count`)) +
     axis.title = element_text(face = "bold")
   )
 ```
-
-Talk more about it.
-This graph shows the change in the number of redemptions over time@fig-redemption. Redemption behavior is relatively stable throughout the time period, but there are some significant peaks, especially on certain days, when the number of redemptions rises sharply. This may reflect promotions associated with the sale or certain redemption events
-
-This is the distribution of the number of redemptions@fig-distribution1. The vast majority of redemption activities are concentrated in the low redemption frequency area, and a few events with a large number of redemptions pull up the tail of the distribution. The distribution of the number of redemptions also shows a skewed distribution, similar to the distribution of the number of sales.
-
-This line chart shows how the number of sales changes over time@fig-sales. It can be seen that the number of sales is relatively stable throughout the period, with occasional sales peaks, especially at a few specific time points. This may reflect a short-term sales surge caused by some promotional activities or special events.
-
 This is a bar chart showing the distribution of sales@fig-distribution2. Most sales are concentrated in a small range, and the frequency drops rapidly as the number of sales increases. The vast majority of sales are less than 1,000, and sales over 2,000 are almost non-existent. This shows that the distribution of sales is highly skewed, with a small number of sales accounting for the majority of sales.
 
+# Conclusion
 Overall, these four graphs show the distribution and temporal trends of the number of sales and redemptions. Both sales and redemptions exhibit highly skewed distributions. In addition, sales and redemption behavior can fluctuate dramatically at specific points in time, which may be related to special activities or events.
 
 \newpage
