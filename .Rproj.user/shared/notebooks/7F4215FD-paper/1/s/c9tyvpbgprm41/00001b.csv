@@ -1,4 +1,6 @@
-"0",""
+"0","#| label: fig-sales"
+"0","#| fig-cap: Total Sales Count Over Time"
+"0","#| echo: false"
 "0","# Total Sales Count Over Time (Bar Plot)"
 "0","ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +"
 "0","  geom_bar(stat = 'identity', fill = 'dodgerblue', color = 'black') +  # Strong color and outline for better visibility"

@@ -1,4 +1,6 @@
-"0",""
+"0","#| label: fig-distribution1"
+"0","#| fig-cap: Distribution of Redemption Counts"
+"0","#| echo: false"
 "0","# Distribution of Redemption Counts (Histogram)"
 "0","ggplot(cleaned_data, aes(x = `Redemption Count`)) +"
 "0","  geom_histogram(bins = 20, fill = 'lightgreen', color = 'black', alpha = 0.7) +  # Clear color contrast with outline"

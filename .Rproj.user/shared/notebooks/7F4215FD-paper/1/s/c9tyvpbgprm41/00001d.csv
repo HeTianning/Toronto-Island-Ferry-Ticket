@@ -1,4 +1,6 @@
-"0",""
+"0","#| label: fig-distribution2"
+"0","#| fig-cap: Distribution of Sales Counts"
+"0","#| echo: false"
 "0","# Distribution of Sales Counts (Histogram)"
 "0","ggplot(cleaned_data, aes(x = `Sales Count`)) +"
 "0","  geom_histogram(bins = 20, fill = 'darkorange', color = 'black', alpha = 0.7) +  # Use darker color for emphasis"
