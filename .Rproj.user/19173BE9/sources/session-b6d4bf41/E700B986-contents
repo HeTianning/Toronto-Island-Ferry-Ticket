@@ -25,12 +25,16 @@ library(tidyverse)
 
 Ferries depart from Jack Layton Ferry Terminal to Toronto Island Park all year round. I want to count the number and status of Toronto Island Ferry tickets. Before downloading this data, I simulated what the data looked like and how it was distributed by understanding and analyzing the subject. After having a general idea of the data, I found some relevant data from Open Data Toronto, which provides near real-time information about ferry ticket sales and ticket redemption. The counts are updated every hour at 15-minute intervals. And downloaded this data. After downloading the data, I started to clean the data, cleaned and organized the data I needed to make the data simpler and clearer, and then tested the data. Finally, I used this data and R code to draw some images, and analyzed these images to get the number and status of Toronto Island Ferry tickets.
 
+You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
+
+The remainder of this paper is structured as follows. @sec-data....
+
 
 
 # Data {#sec-data}
 All the data comes from from @opendatatoronto.
 
-
+Some of our data is of penguins (@fig-bills), from @opendatatoronto.
 
 ```{r}
 #| label: fig-redemption
@@ -50,9 +54,7 @@ ggplot(cleaned_data, aes(x = Timestamp, y = `Redemption Count`)) +
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
   )
-#| label: fig-distribution1
-#| fig-cap: Distribution of Redemption Counts
-#| echo: false
+
 # Distribution of Redemption Counts (Histogram)
 ggplot(cleaned_data, aes(x = `Redemption Count`)) +
   geom_histogram(bins = 20, fill = 'lightgreen', color = 'black', alpha = 0.7) +  # Clear color contrast with outline
@@ -66,9 +68,7 @@ ggplot(cleaned_data, aes(x = `Redemption Count`)) +
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
   )
-#| label: fig-sales
-#| fig-cap: Total Sales Count Over Time
-#| echo: false
+
 # Total Sales Count Over Time (Bar Plot)
 ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +
   geom_bar(stat = 'identity', fill = 'dodgerblue', color = 'black') +  # Strong color and outline for better visibility
@@ -83,9 +83,7 @@ ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +
     axis.title = element_text(face = "bold"),
     axis.text.x = element_text(angle = 45, hjust = 1)  # Rotate x-axis labels for better readability
   )
-#| label: fig-distribution2
-#| fig-cap: Distribution of Sales Counts
-#| echo: false
+
 # Distribution of Sales Counts (Histogram)
 ggplot(cleaned_data, aes(x = `Sales Count`)) +
   geom_histogram(bins = 20, fill = 'darkorange', color = 'black', alpha = 0.7) +  # Use darker color for emphasis
@@ -105,13 +103,8 @@ ggplot(cleaned_data, aes(x = `Sales Count`)) +
 ```
 
 Talk more about it.
-This graph shows the change in the number of redemptions over time@fig-redemption. Redemption behavior is relatively stable throughout the time period, but there are some significant peaks, especially on certain days, when the number of redemptions rises sharply. This may reflect promotions associated with the sale or certain redemption events
 
-This is the distribution of the number of redemptions@fig-distribution1. The vast majority of redemption activities are concentrated in the low redemption frequency area, and a few events with a large number of redemptions pull up the tail of the distribution. The distribution of the number of redemptions also shows a skewed distribution, similar to the distribution of the number of sales.
-
-This line chart shows how the number of sales changes over time@fig-sales. It can be seen that the number of sales is relatively stable throughout the period, with occasional sales peaks, especially at a few specific time points. This may reflect a short-term sales surge caused by some promotional activities or special events.
-
-This is a bar chart showing the distribution of sales@fig-distribution2. Most sales are concentrated in a small range, and the frequency drops rapidly as the number of sales increases. The vast majority of sales are less than 1,000, and sales over 2,000 are almost non-existent. This shows that the distribution of sales is highly skewed, with a small number of sales accounting for the majority of sales.
+And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
 ```{r}
 #| label: fig-planes
@@ -125,7 +118,6 @@ This is a bar chart showing the distribution of sales@fig-distribution2. Most sa
 
 Talk way more about it. 
 
-Overall, these four graphs show the distribution and temporal trends of the number of sales and redemptions. Both sales and redemptions exhibit highly skewed distributions. In addition, sales and redemption behavior can fluctuate dramatically at specific points in time, which may be related to special activities or events.
 
 \newpage
 

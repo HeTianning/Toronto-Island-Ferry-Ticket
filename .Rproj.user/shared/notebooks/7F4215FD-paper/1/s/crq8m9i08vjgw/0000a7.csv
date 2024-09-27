@@ -1,3 +1,0 @@
-"0","ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +"
-"0","  geom_bar(stat = 'identity', fill = 'skyblue') +"
-"0","  labs(title = 'Total Sales Count Over Time', x = 'Hour of the Day', y = 'Total Sales Count') "
