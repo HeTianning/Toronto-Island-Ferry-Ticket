@@ -33,7 +33,7 @@
     doi = {10.21105/joss.01686},
   }  
   
-@Manual{citeopen,
+@Manual{opendatatoronto,
     title = {opendatatoronto: Access the City of Toronto Open Data Portal},
     author = {Sharla Gelfand},
     year = {2022},

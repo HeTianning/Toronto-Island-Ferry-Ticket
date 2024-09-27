@@ -3,7 +3,7 @@
     "path": "~/Desktop/Toronto-Island-Ferry-Ticket/paper/references.bib",
     "project_path": "paper/references.bib",
     "type": "text",
-    "hash": "0",
+    "hash": "211856216",
     "contents": "",
     "dirty": false,
     "created": 1727238560850.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "41,3",
-        "scrollLine": "0"
+        "cursorPosition": "35,8",
+        "scrollLine": "27"
     },
     "folds": "",
-    "lastKnownWriteTime": 1727238629,
+    "lastKnownWriteTime": 1727471564,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1727238629926,
+    "last_content_update": 1727471564307,
     "read_only": false,
     "read_only_alternatives": []
 }

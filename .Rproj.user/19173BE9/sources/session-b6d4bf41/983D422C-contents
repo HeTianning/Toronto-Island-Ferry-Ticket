@@ -17,7 +17,6 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-
 ```
 
 
@@ -41,15 +40,16 @@ All the data comes from from @opendatatoronto.
 #| fig-cap: Redemption Count Over Time
 #| echo: false
 
+cleaned_data <- read_csv(here::here("data", "analysis_data", "clean-ferry-ticket-counts.csv"))
 # Improved plot for Redemption Count over time
 ggplot(cleaned_data, aes(x = Timestamp, y = `Redemption Count`)) +
-  geom_line(color = 'darkred', size = 1.2) +  # Darker color and thicker line for clarity
+  geom_line(color = "darkred", size = 1.2) + # Darker color and thicker line for clarity
   labs(
-    title = 'Redemption Count Over Time',
-    x = 'Timestamp',
-    y = 'Redemption Count'
+    title = "Redemption Count Over Time",
+    x = "Timestamp",
+    y = "Redemption Count"
   ) +
-  theme_minimal(base_size = 14) +  # Clean minimal theme for better readability
+  theme_minimal(base_size = 14) + # Clean minimal theme for better readability
   theme(
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
@@ -59,11 +59,11 @@ ggplot(cleaned_data, aes(x = Timestamp, y = `Redemption Count`)) +
 #| echo: false
 # Distribution of Redemption Counts (Histogram)
 ggplot(cleaned_data, aes(x = `Redemption Count`)) +
-  geom_histogram(bins = 20, fill = 'lightgreen', color = 'black', alpha = 0.7) +  # Clear color contrast with outline
+  geom_histogram(bins = 20, fill = "lightgreen", color = "black", alpha = 0.7) + # Clear color contrast with outline
   labs(
-    title = 'Distribution of Redemption Counts',
-    x = 'Redemption Count',
-    y = 'Frequency'
+    title = "Distribution of Redemption Counts",
+    x = "Redemption Count",
+    y = "Frequency"
   ) +
   theme_minimal(base_size = 14) +
   theme(
@@ -75,37 +75,34 @@ ggplot(cleaned_data, aes(x = `Redemption Count`)) +
 #| echo: false
 # Total Sales Count Over Time (Bar Plot)
 ggplot(cleaned_data, aes(x = Timestamp, y = `Sales Count`)) +
-  geom_bar(stat = 'identity', fill = 'dodgerblue', color = 'black') +  # Strong color and outline for better visibility
+  geom_bar(stat = "identity", fill = "dodgerblue", color = "black") + # Strong color and outline for better visibility
   labs(
-    title = 'Total Sales Count Over Time',
-    x = 'Hour of the Day',
-    y = 'Total Sales Count'
+    title = "Total Sales Count Over Time",
+    x = "Hour of the Day",
+    y = "Total Sales Count"
   ) +
   theme_minimal(base_size = 14) +
   theme(
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold"),
-    axis.text.x = element_text(angle = 45, hjust = 1)  # Rotate x-axis labels for better readability
+    axis.text.x = element_text(angle = 45, hjust = 1) # Rotate x-axis labels for better readability
   )
 #| label: fig-distribution2
 #| fig-cap: Distribution of Sales Counts
 #| echo: false
 # Distribution of Sales Counts (Histogram)
 ggplot(cleaned_data, aes(x = `Sales Count`)) +
-  geom_histogram(bins = 20, fill = 'darkorange', color = 'black', alpha = 0.7) +  # Use darker color for emphasis
+  geom_histogram(bins = 20, fill = "darkorange", color = "black", alpha = 0.7) + # Use darker color for emphasis
   labs(
-    title = 'Distribution of Sales Counts',
-    x = 'Sales Count',
-    y = 'Frequency'
+    title = "Distribution of Sales Counts",
+    x = "Sales Count",
+    y = "Frequency"
   ) +
   theme_minimal(base_size = 14) +
   theme(
     plot.title = element_text(face = "bold", size = 16),
     axis.title = element_text(face = "bold")
   )
-
-  
-  
 ```
 
 Talk more about it.
@@ -116,18 +113,6 @@ This is the distribution of the number of redemptions@fig-distribution1. The vas
 This line chart shows how the number of sales changes over time@fig-sales. It can be seen that the number of sales is relatively stable throughout the period, with occasional sales peaks, especially at a few specific time points. This may reflect a short-term sales surge caused by some promotional activities or special events.
 
 This is a bar chart showing the distribution of sales@fig-distribution2. Most sales are concentrated in a small range, and the frequency drops rapidly as the number of sales increases. The vast majority of sales are less than 1,000, and sales over 2,000 are almost non-existent. This shows that the distribution of sales is highly skewed, with a small number of sales accounting for the majority of sales.
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-
-```
-
-Talk way more about it. 
 
 Overall, these four graphs show the distribution and temporal trends of the number of sales and redemptions. Both sales and redemptions exhibit highly skewed distributions. In addition, sales and redemption behavior can fluctuate dramatically at specific points in time, which may be related to special activities or events.
 

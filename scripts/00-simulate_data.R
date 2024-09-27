@@ -1,7 +1,7 @@
 #### Preamble ####
 # Purpose: Simulates data for Toronto Island Ferry Ticket
 # Author: He Tianning
-# Date: 24 September 2024 
+# Date: 24 September 2024
 # Contact: tianning.he@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: install R
@@ -29,13 +29,10 @@ n <- 1000
 simulated_data <- tibble(
   `_id` = 1:n,
   `Timestamp` = generate_timestamps(n, start_time = "2024-09-24 00:00:00", interval_minutes = 15),
-  `Redemption Count` = sample(0:20, n, replace = TRUE),  # random integer values from 0 to 20
-  `Sales Count` = sample(0:50, n, replace = TRUE)       # random integer values from 0 to 50
+  `Redemption Count` = sample(0:20, n, replace = TRUE), # random integer values from 0 to 20
+  `Sales Count` = sample(0:50, n, replace = TRUE) # random integer values from 0 to 50
 )
 
 # show the simulated data
 head(simulated_data)
 write_csv(simulated_data, "data/sim_data/sim-ferry-ticket-counts.csv")
-
-
-

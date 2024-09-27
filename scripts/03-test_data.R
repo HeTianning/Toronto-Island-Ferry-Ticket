@@ -13,7 +13,7 @@ library(tidyverse)
 
 
 #### Test data ####
-simulated_data = read_csv("data/sim_data/sim-ferry-ticket-counts.csv")
+simulated_data <- read_csv("data/sim_data/sim-ferry-ticket-counts.csv")
 # Test 1: Check if number of rows is 1000
 if (nrow(simulated_data) == 1000) {
   cat("Test 1 Passed: Correct number of rows\n")
@@ -23,7 +23,7 @@ if (nrow(simulated_data) == 1000) {
 
 # Test 2: Check if 'Redemption Count' and 'Sales Count' are non-negative
 if (all(simulated_data$`Redemption Count` >= 0) &&
-    all(simulated_data$`Sales Count` >= 0)) {
+  all(simulated_data$`Sales Count` >= 0)) {
   cat("Test 2 Passed: 'Redemption Count' and 'Sales Count' are within the expected range\n")
 } else {
   cat("Test 2 Failed: 'Redemption Count' or 'Sales Count' is out of range\n")
