@@ -1,0 +1,3 @@
+"0","ggplot(cleaned_data, aes(x = `Sales Count`)) +"
+"0","  geom_histogram(bins = 20, fill = 'orange') +"
+"0","  labs(title = 'Distribution of Sales Counts', x = 'Sales Count', y = 'Frequency')"

@@ -1,0 +1,3 @@
+"0","ggplot(cleaned_data, aes(x = `Redemption Count`)) +"
+"0","  geom_histogram(bins = 20, fill = 'yellow') +"
+"0","  labs(title = 'Distribution of Redemption Counts', x = 'Redemption Count', y = 'Frequency')"

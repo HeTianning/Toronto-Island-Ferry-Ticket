@@ -3,7 +3,7 @@
     "path": "~/Desktop/Toronto-Island-Ferry-Ticket/paper/paper.qmd",
     "project_path": "paper/paper.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1521304583",
     "contents": "",
     "dirty": false,
     "created": 1727238559227.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "59,0",
-        "scrollLine": "47"
+        "cursorPosition": "29,67",
+        "scrollLine": "26"
     },
     "folds": "",
-    "lastKnownWriteTime": 1727239149,
+    "lastKnownWriteTime": 1727466760,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1727239149854,
+    "last_content_update": 1727466760267,
     "read_only": false,
     "read_only_alternatives": []
 }

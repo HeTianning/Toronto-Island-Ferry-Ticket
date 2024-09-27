@@ -1,0 +1,8 @@
+"0","#| label: fig-bills"
+"0","#| fig-cap: Bills of penguins"
+"0","#| echo: false"
+"0",""
+"0",""
+"0","ggplot(cleaned_data, aes(x = Timestamp, y = `Redemption Count`)) +"
+"0","  geom_line(color = 'pink') +"
+"0","  labs(title = 'Redemption Count Over Time', x = 'Timestamp', y = 'Redemption Count') "
