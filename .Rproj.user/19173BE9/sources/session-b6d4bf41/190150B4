@@ -3,7 +3,7 @@
     "path": "~/Desktop/Toronto-Island-Ferry-Ticket/scripts/02-data_cleaning.R",
     "project_path": "scripts/02-data_cleaning.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "648969665",
     "contents": "",
     "dirty": false,
     "created": 1727236917295.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "19,0",
+        "cursorPosition": "20,42",
         "scrollLine": "4"
     },
     "folds": "",
-    "lastKnownWriteTime": 1727237359,
+    "lastKnownWriteTime": 1727470778,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1727237359828,
+    "last_content_update": 1727470778472,
     "read_only": false,
     "read_only_alternatives": []
 }

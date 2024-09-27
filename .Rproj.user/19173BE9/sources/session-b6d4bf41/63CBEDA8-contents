@@ -13,10 +13,10 @@ library(opendatatoronto)
 library(tidyverse)
 
 
-#### Download data ####
+#### Download the data from Open Data Toronto####
 
 
-# get package
+# get the package
 package <- show_package("toronto-island-ferry-ticket-counts")
 package
 
@@ -32,7 +32,7 @@ data
 
 
 
-#### Save data ####
+#### Save the download data ####
 
 # change the_raw_data to whatever name you assigned when you downloaded it.
 write_csv(data, "data/raw_data/raw-ferry-ticket-counts.csv") 

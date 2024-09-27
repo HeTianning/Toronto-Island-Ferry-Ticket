@@ -3,7 +3,7 @@
     "path": "~/Desktop/Toronto-Island-Ferry-Ticket/scripts/00-simulate_data.R",
     "project_path": "scripts/00-simulate_data.R",
     "type": "r_source",
-    "hash": "1484103469",
+    "hash": "2230618017",
     "contents": "",
     "dirty": false,
     "created": 1727235697753.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "35,25",
-        "scrollLine": "23"
+        "cursorPosition": "14,18",
+        "scrollLine": "6"
     },
     "folds": "",
-    "lastKnownWriteTime": 1727470458,
+    "lastKnownWriteTime": 1727470648,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1727470458598,
+    "last_content_update": 1727470648057,
     "read_only": false,
     "read_only_alternatives": []
 }

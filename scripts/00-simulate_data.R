@@ -12,7 +12,7 @@
 library(tidyverse)
 
 
-#### Simulate data ####
+#### Simulate data  ####
 # Set seed
 set.seed(100)
 

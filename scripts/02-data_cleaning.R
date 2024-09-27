@@ -10,13 +10,13 @@
 #### Workspace setup ####
 library(tidyverse)
 
-#### Clean data ####
+#### Clean the data that we downloaded ####
 data <- read_csv("data/raw_data/raw-ferry-ticket-counts.csv")
 
 cleaned_data <-
   data |>
-  select(-`_id`)|> # remove id variable
+  select(-`_id`)|> # remove the id variable
   tidyr::drop_na() # remove rows with missing value
 
-#### Save data ####
+#### Save the data that we already cleaned ####
 write_csv(cleaned_data, "data/analysis_data/clean-ferry-ticket-counts.csv")
